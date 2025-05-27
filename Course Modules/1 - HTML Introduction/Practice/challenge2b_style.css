@@ -10,6 +10,8 @@ body {
 	text-align: center;
 	width: 400px;
 	height: 400px;
+	border-bottom: 30px solid #0a2ff1;
+	border-top: 18px solid #0a2ff1;
 }
 
 h1,h2,h3,h5 { font-weight: 900;}

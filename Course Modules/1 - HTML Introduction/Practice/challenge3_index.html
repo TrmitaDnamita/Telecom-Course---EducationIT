@@ -5,22 +5,37 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Desafío 3</title>
+	
+	<link rel="stylesheet" href="challenge3_style.css">
 </head>
 
 <body>
 	<h1>Resumen de la Unidad 1</h1>
+
 	<article>
 		<h2>HTML y CSS</h2>
 		<p><strong>HTML</strong> es el lenguaje de marcado que permite estructurar el contenido de una página web mediante etiquetas.</p>
 		<p>Mientras que <strong>CSS</strong> se utiliza para aplicar estilos visuales a los elementos HTML, como colores, fuentes y márgenes.</p>
+		<aside><em>Nota:</em> si bien es posible incorporar CSS dentro del HTML, no es recomendable, ya que HTML no debería usarse con fines de estilo, sino estructurales.</aside>
 	</article>
+
 	<section>
 		<h3>Etiquetas de HTML más comunes:</h3>
 		<ul>
-			<li>Los <strong>encabezados</strong> que van desde <em>h1 hasta h6</em></li>
-			<li>Los elementos semánticos como <strong>article</strong>, <strong>section</strong>, <strong>header</strong> y <strong>main</strong> que permiten organizar mejor la estructura de la página web</li>
-			<li>Las <strong>listas</strong> que pueden ser tanto enumeradas como no enumeradas para una mejor lectura de características</li>
-			<li>Y otras etiquetas igual de importantes que puedes encontrar en: <a href="https://www.w3schools.com/TAGS/default.asp">HTML Tags</a></li>
+			<li>Los <strong>encabezados</strong>, que van desde <em>h1 hasta h6</em>.</li>
+			<li>Los elementos semánticos como <strong>article</strong>, <strong>section</strong>, <strong>header</strong> y <strong>main</strong>, que permiten organizar mejor la estructura de la página web.</li>
+			<li>Las <strong>listas</strong>, que pueden ser tanto numeradas como no numeradas, para una mejor lectura de características.</li>
+			<li>Y otras etiquetas igual de importantes que puedes encontrar en: <a href="https://www.w3schools.com/TAGS/default.asp">Etiquetas HTML</a>.</li>
+		</ul>
+	</section>
+
+	<section>
+		<h3>Propiedades básicas de CSS:</h3>
+		<ul>
+			<li><strong>margin</strong> permite modificar los márgenes de tu página o sus etiquetas. Se puede usar de forma general o especificar el lado que se desea modificar (left, right, top, bottom).</li>
+			<li><strong>padding</strong> es otra propiedad similar a <strong>margin</strong>, con la diferencia de que establece la distancia interna entre el contenido y los bordes de una etiqueta. También puede aplicarse de forma general o específica.</li>
+			<li><strong>font</strong> te ayuda a modificar el estilo de los textos con una variedad de opciones como tamaño, tipo, alineación, estilo, etc.</li>
+			<li>Para más información, puedes consultar todas las propiedades en: <a href="https://www.w3schools.com/CSSref/index.php">Propiedades CSS</a>.</li>
 		</ul>
 	</section>
 	<footer>
@@ -29,3 +44,35 @@
 </body>
 
 </html>
+
+<!-- GPT Prompt
+1. Título del ejercicio:
+Estructura básica de contenido y aplicación de estilos con CSS externo
+
+2. Objetivos del ejercicio:
+
+Practicar la creación de un documento HTML que incluya títulos, párrafos y listas.
+
+Aplicar estilos mediante una hoja de estilos externa utilizando propiedades básicas de CSS como color, background-color, font-size y font-family.
+
+3. Consigna del ejercicio:
+Crear una página HTML llamada ejercicio.html que contenga:
+
+Un título principal (h1) con el nombre "Resumen de la unidad 1".
+
+Dos párrafos que describan los conceptos fundamentales de HTML y CSS.
+
+Una lista con al menos tres elementos que mencionen etiquetas HTML comunes.
+
+Una lista con al menos tres elementos que mencionen propiedades CSS básicas.
+
+Además, crear un archivo CSS externo llamado estilos.css que:
+
+Cambie el color del texto de los títulos a azul oscuro.
+
+Cambie el color de fondo de la página a un tono claro.
+
+Aplique un tamaño de fuente de 16px a los párrafos.
+
+Utilice una fuente sans-serif para todo el texto.
+-->
