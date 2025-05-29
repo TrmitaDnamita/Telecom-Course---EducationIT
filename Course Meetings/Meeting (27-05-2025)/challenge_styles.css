@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&family=Dosis:wght@200..800&display=swap');
+
+/*------------------------------------------------------*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+	text-decoration: none;
+	text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+	font-family: 'Dosis', sans-serif;
+	text-justify: inter-word;
+
+	scroll-behavior: smooth;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+.scrollDown,
+#goUp {
+	left: 50%;
+	animation: bounce 2s infinite, fadeIn 0.5s ease forwards;
+}
+
+.scrollDown {
+	position: absolute;
+	bottom: 5%;
+}
+
+#goUp {
+	position: fixed;
+	top: 5%;
+}
+
+@keyframes bounce {
+
+	0%,
+	100% {
+		transform: translateX(-50%) translateY(0);
+	}
+
+	50% {
+		transform: translateX(-50%) translateY(10px);
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+.arrowheadDown,
+.arrowheadUp {
+	stroke-width: 5;
+	stroke-linecap: round;
+	stroke: whitesmoke;
+	fill: none;
+}
+
+.arrowheadDown-shadow,
+.arrowheadUp-shadow {
+	stroke-width: 8;
+	stroke-linecap: round;
+	stroke: rgba(25, 0, 25, 0.5);
+	filter: blur(5px);
+	fill: none;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+
+.main_page {
+	position: relative;
+	min-height: 100vh;
+	background: rgba(0, 0, 0, 0.2) url('portal-main_16-9.jpg');
+	background-size: cover;
+	background-position: center;
+	background-blend-mode: saturation;
+	color: white;
+	box-shadow: 1px 0px 20px black inset;
+}
+
+.main_page p {
+	font-family: 'Baloo Paaji 2', sans-serif;
+	letter-spacing: 2px;
+	line-height: 18px;
+	position: absolute;
+	left: 3%;
+	top: 3%;
+	width: 100px;
+}
+
+.main_page p span {
+	font-size: 11px;
+}
+
+.main_page h1 {
+	font-size: 12vh;
+	text-wrap: nowrap;
+}
+
+.main_page h1,
+.main_page h2 {
+	font-weight: 400;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.main_page h2 {
+	top: 60%;
+	font-size: 6vh;
+}
+
+.main_page nav {
+	position: absolute;
+	right: 3%;
+	top: 5%;
+}
+
+.main_page nav a {
+	padding: 40px;
+	color: white;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+
+/*--------------------------------------------------------*/
+
+.description {
+	background-color: white;
+	background-size: cover;
+	background-position: center;
+	color: black;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.description {
+	text-align: center;
+}
+
+.description h2 {
+	font-weight: 500;
+	font-size: 6vh;
+
+	width: 85%;
+	text-align: center;
+	padding: 180px;
+	padding-bottom: 60px;
+}
+
+.description p {
+	font-size: 4vh;
+	width: 75%;
+	padding-bottom: 40px;
+}
+
+.description a {
+	color: white;
+	display: inline-block;
+	padding: 2vh 3vh 2vh 3vh;
+}
+
+.description button {
+	background-color: black;
+
+	font-size: 2.5vh;
+	margin-bottom: 16vh;
+
+	border: none;
+	border-radius: 2px;
+	box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.2);
+	transition: 0.5s;
+}
+
+.description button:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+	box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.2), 4px 4px 10px rgba(255, 255, 255, 0.2) inset;
+	font-size: 100vh;
+	transition: 5.5s;
+}
+
+/*-------------------------------------------------------------------------------------*/
+
+.aboutusPage {
+	position: relative;
+	min-height: 100%;
+	max-width: 90%;
+	background-image: url("hdc4zr5havh11.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	box-shadow: 1px 0px 20px black inset;
+	color: white;
+	align-self: center;
+	padding: 15vh;
+}
+.aboutusPage h2, .aboutusPage p, .extraPage footer{
+	padding: 10vh;
+	text-align: center;
+	letter-spacing: 1px;
+}
+.aboutusPage h2 {
+	font-size: 7vw;
+	font-weight: 400;
+}
+.aboutusPage p {
+	font-size: 2.5vw;
+	font-weight: 300;
+}
+.extraPage footer {
+	font-size: 2vw;
+}
+.extraPage hr {
+	margin-top: 0.5em;
+	margin-bottom: 0.1%;
+	border-style: solid;
+	border-width: 2px;
+	filter: blur(1px);
+	width: 90%;
+	justify-self: center;
+}

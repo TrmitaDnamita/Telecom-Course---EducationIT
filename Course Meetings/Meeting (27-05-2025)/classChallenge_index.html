@@ -5,193 +5,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>The Great Whale</title>
+
+	<link rel="stylesheet" href="challenge_styles.css">
 	
-	<style>
-		@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&family=Dosis:wght@200..800&display=swap');
-		
-		* {
-			margin: 0;
-			padding: 0;
-			box-sizing: border-box;
-			
-			text-decoration: none;
-			text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
-			font-family: 'Dosis', sans-serif;
-			text-justify: inter-word;
-			
-			scroll-behavior: smooth;
-		}
-		
-		body {
-			display: flex;
-			flex-direction: column;
-		}
-		
-		.main_page {
-			position: relative;
-			min-height: 100vh;
-			background: rgba(0, 0, 0, 0.2) url('../portal-main_16-9.jpg');
-			background-size: cover;
-			background-position: center;
-			background-blend-mode: saturation;
-			color: white;
-			box-shadow: 1px 0px 20px black inset;
-		}
-		
-		.main_page p {
-			font-family: 'Baloo Paaji 2', sans-serif;
-			letter-spacing: 2px;
-			line-height: 18px;
-			position: absolute;
-			left: 3%;
-			top: 3%;
-			width: 100px;
-		}
-		
-		.main_page p span {
-			font-size: 11px;
-		}
-		
-		.main_page h1 {
-			font-size: 600%;
-			text-wrap: nowrap;
-		}
-		
-		.main_page h1, .main_page h2 {
-			font-weight: 400;
-			position: absolute;
-			top: 40%;
-			left: 50%;
-			transform: translateX(-50%);
-		}
-		
-		.main_page h2 {
-			top: 60%;
-			font-size: 200%;
-		}
-		
-		.main_page nav {
-			position: absolute;
-			right: 3%;
-			top: 5%;
-		}
-		
-		.main_page nav a {
-			padding: 40px;
-			color:white;
-			font-weight: 600;
-			letter-spacing: 1px;
-		}
-		
-		.scrollDown, #goUp {
-			left: 50%;
-			animation: bounce 2s infinite, fadeIn 0.5s ease forwards;
-		}
-		
-		.scrollDown {
-			position: absolute;
-			bottom: 5%;
-		}
-		
-		#goUp {
-			position: fixed;
-			top: 5%;
-		}
-		
-		@keyframes bounce {
-      0%, 100% { transform: translateX(-50%) translateY(0); }
-      50% { transform: translateX(-50%) translateY(10px); }
-    }
-		
-		@keyframes fadeIn {
-			from { opacity: 0;} 
-			to { opacity: 1;}
-		}
-		
-		.arrowheadDown, .arrowheadUp {
-			stroke-width: 5;
-			stroke-linecap: round;
-		}
-		
-		.arrowheadDown {
-			stroke: rgb(255, 255, 255);
-			fill: none;
-		}
-		
-		.arrowheadUp {
-			stroke: rgba(0, 0, 0, 0.2);
-			fill: none;
-		}
-		
-		.arrowheadDown-shadow, .arrowheadUp-shadow {
-			stroke-width: 8;
-			stroke-linecap: round;
-			stroke: rgba(50, 0, 0, 0.2);
-			filter: blur(2px);
-			fill: none;
-		}
-		
-		.arrowheadUp-shadow {
-			stroke: rgba(255, 255, 255, 0.2);
-		}
-		
-		/*--------------------------------------------------------*/
-		
-		.description {
-			background-color: white;
-			background-size: cover;
-			background-position: center;
-			color: black	;
-			
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-		}
-		
-		.description {
-			text-align: center;
-		}
-		
-		.description h2 {
-			font-weight: 500;
-			font-size: 400%;
-			
-			width: 85%;
-			text-align: center;
-			padding: 180px;
-			padding-bottom: 60px;
-		}
-		
-		.description p {
-			font-size: 225%;
-			width: 75%;
-			padding-bottom: 40px;
-		}
-		
-		.description a {
-			color: white;
-			display: inline-block;
-			padding: 20px 30px 20px 30px;
-		}
-		
-		.description button {
-			background-color: black;
-			
-			font-size: 140%;
-			margin-bottom: 160px;
-			
-			border: none;
-			border-radius: 2px;
-			box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.2);
-		}
-		
-		.description button:hover {
-			background-color: rgba(0, 0, 0, 0.8);
-			box-shadow: -8px 8px 10px rgba(0, 0, 0, 0.2);
-		}
-		
-	</style>
 	<script>
 		window.addEventListener("scroll", () => {
 			const goUp = document.getElementById("goUp");
@@ -199,7 +15,7 @@
 			if (window.scrollY > window.innerHeight * 0.5) {
 				goUp.style.display = "block";
 				goDown.style.display = "none";
-			}else {
+			} else {
 				goUp.style.display = "none";
 				goDown.style.display = "block"
 			}
@@ -208,6 +24,7 @@
 </head>
 
 <body>
+	<!------------------------------------------>
 	<div class="main_page" id="">
 		<h1>THE GREAT WHALE</h1>
 		<h2>OCTOBER 16-19, 2020</h2>
@@ -215,39 +32,47 @@
 		<nav>
 			<a href="#">Contributors</a>
 			<a href="#">Local Hubs</a>
-			<a href="#">Join Us</a>
+			<a href="#joinusPage">Join Us</a>
 		</nav>
-		<a href="#nextPage" class="scrollDown" id="goDown">
-			<svg width="75" height="35" viewBox="0 0 75 35">
-				<path 
-					class="arrowheadDown-shadow" 
-					d="M 10, 2 L 37.5, 23 L 65, 2"/>
-				<path 
-					class="arrowheadDown" 
-					d="M 10, 2 L 37.5, 23 L 65, 2"/>
+		<a href="#joinusPage" class="scrollDown" id="goDown">
+			<svg width="75" height="50" viewBox="0 -10 75 50">
+				<path class="arrowheadDown-shadow" d="M 10, 2 L 37.5, 23 L 65, 2" />
+				<path class="arrowheadDown" d="M 10, 2 L 37.5, 23 L 65, 2" />
 			</svg>
 		</a>
 	</div>
-	<div class="description">
+	<!------------------------------------------>
+	<div class="description" id="joinusPage">
 		<h2>
 			A GLOBAL-LOCAL, VIRTUAL-PHYSICAL HAPPENING TO MAKE BUSINESS MORE BEAUTIFUL</h2>
 		<p>
-			There's no going back to "normal." We need a reset, not just a recovery. Now is the time to dream bigger and build better.</p>
+			There's no going back to "normal." We need a reset, not just a recovery. Now is the time to dream bigger and build
+			better.</p>
 		<button>
-			<a href="https://www.google.com/" target="_blank">
+			<a href="https://hyakumonogatari.com/2013/05/10/bakekujira-and-japans-whale-cults/" target="_blank">
 				BECOME PART OF THE GREAT WHALE</a>
 		</button>
-		<section id="nextPage"></section>
 	</div>
-	
+	<!------------------------------------------>
+	<div class="aboutusPage">
+		<h2>Experience a new type of gathering</h2>
+		<p>The Great Wave takes place online and offline, on screen and in thousands of offices, work spaces, households,
+			public places-and in nature. Join via virtual stream from anywhere or at one of the local hubs in more than 25
+			cities around the world.</p>
+	</div>
+	<div class="extraPage">
+		<footer>
+			Featuring talks, performances, experiments, deep dives, masterclasses, field trips, mystery meet-ups, silent
+			dinners, masquerade balls, and much more, all converging in the most beautiful Monday meeting ever. More details
+			coming soon.
+		</footer>
+		<hr>
+	</div>
+	<!------------------------------------------>
 	<a href="#" id="goUp" style="display: none;">
-		<svg width="50" height="35" viewBox="0 0 50 35">
-			<path 
-				class="arrowheadUp-shadow" 
-				d="M 10, 20 L 25, 5 L 40, 20"/>
-			<path 
-				class="arrowheadUp" 
-				d="M 10, 20 L 25, 5 L 40, 20"/>
+		<svg width="50" height="50" viewBox="0 -12.5 50 50">
+			<path class="arrowheadUp-shadow" d="M 10, 20 L 25, 5 L 40, 20" />
+			<path class="arrowheadUp" d="M 10, 20 L 25, 5 L 40, 20" />
 		</svg>
 	</a>
 </body>
