@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Test</title>
+	
+	<style>
+		* {
+			padding: 0; margin: 0;
+			box-sizing: border-box;
+		}
+		
+		/*
+		.divBox {
+			border: 2px solid orange;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translateX(-50%);
+		}
+		*/
+		
+		.background-image {
+			height: 100%; width: 100%;
+			background-image: url("https://static.dc.com/2025-04/supermanday_hero_3x1_b.png?w=960");
+			background-size: cover;
+			background-position: center;
+			
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+		}
+		
+		.divFlex {
+			border: 2px solid red;
+			height: 100vh;
+		}
+		
+		p {
+			color:whitesmoke;
+			font-weight: bold;
+			font-size: 56px;
+			text-shadow: -2px 2px 0 rgba(255, 0, 0, 0.9);
+			letter-spacing: 24px;
+			line-height: 500px;
+		}
+	</style>
+</head>
+<body>
+<!--
+	<div class="divBox">
+		<p>Hello World</p><br>
+		<p>Dinamita</p>
+	</div>
+-->
+<div class="divFlex">
+		<div class="background-image">
+			<p>Hello World</p><br>
+			<p>Superman</p>
+		</div>
+	</div>
+</body>
+</html>

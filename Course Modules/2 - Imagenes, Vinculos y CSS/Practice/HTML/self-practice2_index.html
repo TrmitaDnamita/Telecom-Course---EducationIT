@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+	<svg width="200" height="400">
+		<path d="M 93 300 L 107 300 L 103 165 L 97 165" fill="black"/>
+    	<g id="windmill-head" transform="translate(100,150)">
+    		<circle r="8" fill="black"/>
+            <path 
+            	id="arm"
+                d="
+                M -7 -20
+                C -7 -10 7 -10 7 -20
+                L 2 -80
+                L -2 -80"
+								fill="gray"
+            />
+            <use href="#arm" transform="rotate(+120)" />
+            <use href="#arm" transform="rotate(-120)" />
+						
+						<animateTransform 
+								attributeName="transform"
+								attributeType="XML"
+								type="rotate"
+								from="0 0 0"
+								to="360 0 0"
+								dur="4s"
+								repeatCount="indefinite"
+								additive="sum"
+						/>
+        </g>
+    </svg>
+</body>
+</html>

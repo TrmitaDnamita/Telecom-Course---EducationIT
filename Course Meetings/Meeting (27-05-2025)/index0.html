@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Clase 1</title>
+</head>
+
+<body>
+	<h1 style="color:aquamarine; text-shadow: 3px 3px 10px rgba(255, 0, 0, 0.15);">
+		Titulo Principal
+	</h1>
+	<h3>Titulo Secundario</h3>
+	<div style="border: 10px dashed rgba(0,0,100,0.15);">
+		<a href="https://www.google.com" target="_blank" style="
+		text-decoration: none; 
+		font: bold 16px Arial, Helvetica, sans-serif;
+		border: 2px dashed orange;">
+			Google
+		</a>
+	</div>
+
+	<img src="https://static.educacionit.com/alumni/assets/generic/logo.svg" alt="Imagen de EducationIT"
+		style="width: 150px;">
+
+	<h3>Lista Ordenada</h3>
+	<ol type="I">
+		<li>Cafe</li>
+		<li>Leche</li>
+		<li>Te</li>
+	</ol>
+
+	<h3>Lista no Ordenada</h3>
+	<ul>
+		<li>Cafe</li>
+		<li>Leche</li>
+		<li>Te</li>
+	</ul>
+
+	<details>
+		<summary>Casita</summary>
+		<canvas id="myCanvas" width="300" height="300" style="border: 1px solid brown;">
+			Tu navegador no soporta la etiqueta HTML Canvas
+		</canvas>
+	</details>
+
+	<script>
+		var c = document.getElementById("myCanvas");
+		var ctx = c.getContext("2d");
+
+		ctx.lineWidth = 10;
+		ctx.strokeRect(75, 140, 150, 110);
+		ctx.fillRect(130, 190, 40, 60);
+		ctx.fillRect(90, 190, 30, 35);
+
+		ctx.beginPath();
+		ctx.moveTo(75, 75);
+		ctx.lineTo(75, 140);
+		ctx.lineTo(209, 132);
+		ctx.closePath();
+		ctx.stroke();
+	</script>
+
+	<h2>Formulario HTML</h2>
+
+	<form action="/action_page.php">
+		<label for="fname">Nombre:</label><br>
+		<input type="text" id="fname" name="fname" value="Lorem Ipsum"><br>
+		<label for="lname">Apellido</label><br>
+		<input type="text" id="lname" name="lname" value="Dolor Sit Amet"><br>
+		<input type="submit" value="Enviar">
+	</form>
+	
+	<footer>
+		<p>Este es el pie de pagina</p>
+		<p>Fecha: <time datetime="2025-05-28">28 de Mayo de 2025</time></p>
+	</footer>
+</body>
+
+</html>
