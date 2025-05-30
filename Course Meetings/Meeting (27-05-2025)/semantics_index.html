@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Semantics</title>
+
+	<style>
+		* {
+			font-family: Arial, Helvetica, sans-serif;
+			text-decoration: none;
+			border: 0px black;
+		}
+		
+		header {
+			border: 2px solid green;
+			margin: 1dvw;
+		}
+		
+		a {
+			color: black;
+			margin: 1dvw;
+		}
+		a:hover {
+			text-decoration: underline;
+		}
+		footer {
+			border: 2px solid yellow;
+			margin: 0.5dvw;
+		}
+		section {
+			border: 2px solid purple;
+			margin: 0.5dvw;
+		}
+		aside {
+			border: 2px solid aquamarine;
+			margin: 0.5dvw;
+		}
+	</style>
+</head>
+
+<body>
+	<header id="topHeader">
+		<h1>Hello this is the <span style="color: green;">header</span></h1>
+		<h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore voluptatibus quibusdam incidunt voluptatem
+			sapiente natus est veritatis delectus ullam repellendus vel quidem deserunt eos iure, explicabo omnis? Odio,
+			obcaecati illum!</h2>
+	</header>
+	<nav style="border: 2px solid darkred; margin: 1dvw;">
+		<a href="#">Some</a>
+		<a href="#">Navigation</a>
+		<a href="#">Items</a>
+	</nav>
+	<div style="display: flex; margin: 0.5dvw;">
+		<article style="border: 2px solid blue; width: 75dvw;">
+			<Header style="margin: 0.5dvw;">
+				<h2>Some Article Header</h2>
+			</Header>
+			<section>
+				<h3>I shall explain this article</h3>
+				<h3>In conclusion, article.</h3>
+			</section>
+			<footer>&copy; All rights footed</footer>
+		</article>
+		<div style="border: 2px solid gold; margin-left: 0.5dvw;">
+			<aside>
+				<ul>
+					<li>some text</li>
+					<li>some more text</li>
+				</ul>
+			</aside>
+			<aside>
+				<img
+					src="https://www.pacificwhale.org/wp-content/uploads/2023/12/EVENT_MWF_2023_GWC_Sign_evergreen_R3.pdf-3.png"
+					alt="Great Whale"
+					style="width: 25dvw;">
+			</aside>
+		</div>
+	</div>
+	<footer style="margin: 0.5dvw;">
+		HELLO EVERYBODY.
+	</footer>
+</body>
+
+</html>

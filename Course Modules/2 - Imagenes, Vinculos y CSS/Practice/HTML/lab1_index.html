@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Laboratorio 1</title>
+
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+		* {
+			font-family: 'Montserrat', sans-serif;
+		}
+		h1,
+		h2 {
+			font-weight: bold;
+		}
+		h1 {
+			font-size: 40px;
+		}
+		h2 {
+			display: inline-block;
+			font-size: 12px;
+			text-align: center;
+			width: 150px;
+			background-color: #86d2f2;
+			margin-bottom: 5px;
+		}
+		a:link {
+			text-decoration: none;
+			color: black;
+		}
+		p {
+			margin-top: 5px;
+			font-size: 20px;
+			line-height: 200%;
+		}
+		strong {
+			font-weight: 400;
+		}
+		div {
+			display: flex;
+			border: 1px solid black;
+			margin: 12px;
+			width: 200px;
+			height: 200px;
+			
+			flex-direction: column;
+			text-align: center;
+			justify-content: center;
+			align-items: center;
+		}
+		div a {
+			padding: 16px;
+			font-size: 20px;
+		}
+		div img {
+			width: 40%;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<h1>Panel</h1>
+		<h2><a href="mailto:test@example.com?subject=Quiero Mi Descuento!" title="Pedir Pase Anual de GymApp!">Mandanos un
+				mail</a></h2>
+	</header>
+	<p>
+		¡Te damos la bienvenida a GymApp! <br>
+		<strong>Disfrutá de tu pase anual con descuento</strong>.
+	</p>
+	<ul style="list-style: none; padding: 0; margin: 0;">
+		<li>
+			<div>
+				<a href="#Plan"><img src="deporte1.png" alt="Plan"/></a>
+				<a href="#Plan">Plan personalizado</a>
+			</div>
+		</li>
+		<li>
+			<div>
+				<a href="#Horarios"><img src="deporte2.png" alt="Horarios"/></a>
+				<a href="#Horarios">Acomodá tus tiempos</a>
+			</div>
+		</li>
+	</ul>
+</body>
+
+</html>
