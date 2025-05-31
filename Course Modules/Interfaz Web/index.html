@@ -2,71 +2,107 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto Integrador</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto Integrador</title>
 
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!--
-    <header>
-        <h1>wwwwapas</h1>
-        <nav>
-            <a href="#">Inicio</a>
-            <a href="#Servicios">Servicios</a>
-            <a href="#Contacto">Contacto</a>
-        </nav>
+  <div class="first_page">
+    <header class="flex_1">
+      <img style="margin-right: auto;" src="img-folder/logos/logo.svg" alt="wwwapas-logo">
+      <nav>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#">Login</a>
+      </nav>
     </header>
--->
-    <main>
-        <h2>Somos <strong>wwwwapas</strong></h2>
-        <em>Social media managers | creadoras de contenido</em>
-        <p>Nos encargamos de construir, gestionar y administrar la comunidad
-            online de tu marca, empresa o negocio <strong>¡Creamos relaciones estables y
-                duraderas con tus clientes!</strong></p>
+    <main id="inicio">
+      <div class="flex_2">
+        <div>
+          <h1>Somos<br /> <strong>wwwapas</strong></h1>
+          <p><em>Social media managers | creadoras de contenido</em></p>
+          <p>Nos encargamos de construir, gestionar y<br /> administrar la comunidad
+            online de tu marca,<br /> empresa o negocio <strong>¡Creamos relaciones<br /> estables y
+              duraderas con tus clientes!</strong>
+          </p>
+        </div>
+        <img src="img-folder/foto.png" alt="wwwapas">
+      </div>
+      <div class="flex_3">
+        <div class="quienes_somos">
+          <h2>¡Hola! Somos SOFI & JULIA,</h2>
+          <p>
+            las social media managers, las creadoras de contenido,<br /> las
+            copywriters, las generadoras de leads, las<br /> diseñadoras, las
+            estrategas en marketing digital, las<br /> potenciadoras de ventas,
+            el posicionamiento de tu<br /> marca <strong>
+              ¡Somos el complemento que
+              necesitás para<br /> hacer crecer tu marca! ¡Somos wwwapas!
+            </strong>
+          </p>
+        </div>
+        <div class="que_hacemos">
+          <h2>GESTIONAMOS TUS REDES SOCIALES</h2>
+          <p>
+            La transformación digital no es solo para grandes<br /> compañías,
+            todas las empresas deben emprenderla<br /> cuanto antes y aquí
+            es donde podemos asistirte.<br /> Armamos estrategias a medida
+            para tu empresa,<br /> marca o producto <strong>
+              ¡Aumentá tu presencia
+              digital y<br /> generá nuevas ventas y contactos!
+            </strong>
+          </p>
+        </div>
+      </div>
     </main>
-    <section id="Quienes Somos?">
-        <h3>¡Hola! Somos SOFI & JULIA,</h3>
-        <p>
-            las social media managers, las creadoras de contenido, las
-            copywriters, las generadoras de leads, las diseñadoras, las
-            estrategas en marketing digital, las potenciadoras de ventas,
-            el posicionamiento de tu marca <strong>
-                ¡Somos el complemento que
-                necesitás para hacer crecer tu marca! ¡Somos wwwapas!
-            </strong>
-        </p>
-    </section>
-    <section id="Que Proponemos?">
-        <h3>GESTIONAMOS TUS REDES SOCIALES</h3>
-        <p>
-            La transformación digital no es solo para grandes compañías,
-            todas las empresas deben emprenderla cuanto antes y aquí
-            es donde podemos asistirte. Armamos estrategias a medida
-            para tu empresa, marca o producto <strong>
-                ¡Aumentá tu presencia
-                digital y generá nuevas ventas y contactos!
-            </strong>
-        </p>
-    </section>
-    <section id="Servicios">
-        <h3>Servicios</h3>
-        <ol type="1">
-            <li>Análisis de perfil (Benchmarking)</li>
-            <li>Revisión y activación de canales</li>
-            <li>Gestión, creación y diseño de contenido</li>
-            <li>Respuestas a mensajes y consultas</li>
-            <li>Segmentación de promociones según el público objetivo la pauta publicitaria</li>
-            <li>Diagramamos un calendario que se ajuste a los objetivos de la empresa</li>
-            <li>¡Empezamos a comunicar!</li>
-        </ol>
-    </section>
-    <footer>
-        <h4><strong>¿Quieres que nos contactemos con vos?</strong></h4>
-        <aside id="Contacto">Envíanos tu consulta >></aside>
-    </footer>
+  </div>
+  <hr id="servicios">
+  <div class="flex_4">
+    <img src="img-folder/img-servicios.svg" alt="Servicios_wwwapas">
+    <div>
+      <h2>Servicios</h2>
+      <ol type="1">
+        <li>Análisis de perfil (Benchmarking)</li>
+        <li>Revisión y activación de canales</li>
+        <li>Gestión, creación y diseño de contenido</li>
+        <li>Respuestas a mensajes y consultas</li>
+        <li>Segmentación de promociones según<br/> el público objetivo la pauta publicitaria</li>
+        <li>Diagramamos un calendario que se ajuste<br/> a los objetivos de la empresa</li>
+        <strong>7. ¡Empezamos a comunicar!</strong>
+      </ol>
+    </div>
+  </div>
+  <hr id="contacto">
+  <div class="flex_5">
+    <div class="flex_5a">
+      <div>
+        <p><strong><span>¿Quieres que nos</span><br/> <span>contactemos con vos?</span></strong></p>
+        <aside>Envíanos tu consulta >></aside>
+      </div>
+      <form style="display: flex; flex-direction: column;">
+        <label for="name">Nombre <span>*</span></label>
+        <input type="text" id="name" name="name">
+        <label for="email">Email <span>*</span></label>
+        <input type="text" id="email" name="email">
+        <label for="message">Mensaje <span>*</span></label>
+        <input type="text" id="email" name="email">
+      </form>
+    </div>
+    <div class="flex_5b">
+      <p>redes<br/>wwwapas</p>
+      <img src="img-folder/logos/instagram-icon.svg" alt="Instagram-WWWapas">
+      <img src="img-folder/logos/dribbble-icon.svg" alt="Dribbble-WWWapas">
+      <img src="img-folder/logos/linkedin-icon.svg" alt="LinkedIn-WWWapas">
+      <img src="img-folder/logos/facebook-icon.svg" alt="Facebook-WWWapas">
+    </div>
+  </div>
+  <footer>
+    <p>wwwapas</p>
+    <a href="mailto:wwwapas_sm@gmail.com">wwwapas_sm@gmail.com</a>
+  </footer>
 </body>
 
 </html>

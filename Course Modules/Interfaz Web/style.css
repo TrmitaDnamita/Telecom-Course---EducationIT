@@ -1,24 +1,218 @@
 @import url('https://fonts.googleapis.com/css2?family=Coiny&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+* {
+	padding: 0; 
+	margin: 0;
+}
+
+html {
+	background-color: #fcee21;
+	padding: 48px 128px 0px 128px;
+	
+	display: flex;
+	justify-content: space-evenly;
+	margin: auto;
+}
+
 body {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
-}
-main em {
 	
-	font-style: normal;
-	font-size: 26px;
+	background-color: #f2f2f2;
+	color: #26313b;
+	
+	padding: 20px 140px 140px;
+	
+	width: clamp(500px, 100dvw, 1659px);
+	background: linear-gradient(to top, #fcee21 9%, #f2f2f2 0);
 }
 
-h2 {
-	font-size: 40px;
-	padding: 0; margin-top: 0;
+.flex_1, .flex_2, .flex_3, .flex_4, .flex_5, .flex_5a, .flex_5b, footer {
+	display: flex;
+	flex-direction: row;
 }
 
-h2 strong {
+.flex_1 {
+	padding-top: 40px;
+	
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.flex_1 a {
+	text-decoration: none;
+	color: #26313b;
+	
+	padding-left: 156px;
+	font-size: 24px;
+}
+
+.flex_1 a:hover {
+	font-weight: 700;
+}
+
+.flex_2 {
+	margin-top: 50px;
+	justify-content: space-between;
+}
+
+.flex_2 h1 {
+	font-size: 56px;
+	line-height: 0px;
+	padding: 60px 60px 0 0;
+	color: black;
+}.flex_2 h1 strong {
 	font: 700 96px 'Coiny', system-ui;
 }
 
-h3 {
+.flex_2 em {
+	font-style: normal;
+	font-size: 22px;
+	
+	background-color: #fcee21;
+	padding: 0 32px 0 16px;
+	text-align: center;
+	
+	display: inline-block;
+	margin-bottom: 80px;
+}
+
+.flex_2 p {
+	font-size: 26px;
+}
+
+.flex_3 {
+	justify-content: space-around;
+	margin-top: 64px;
+	margin-bottom: 96px;
+}
+
+.quienes_somos {
+	margin-right: auto;
+}
+
+.que_hacemos {
+	padding-right: 68px;
+}
+
+.flex_3 h2 {	
+	font-size: 30px;
 	font-weight: 900;
+	background-color: #fcee21;
+	
+	display: inline-block;
+	padding-right: 10px;
+	padding-left: 4px;
+	
+	margin: 10px 0 10px 0;
+}
+
+.flex_3 p {
+	font-size: 25px;
+}
+
+hr {
+	display: flex;
+	justify-content: center;
+	margin: 32px 0 32px 0;
+	border: 1px solid #000000ef;
+	filter: blur(1px);
+}
+
+.flex_4 {
+	justify-content: space-between;
+	margin: 96px 166px 96px 0;
+	font-size: 24px;
+}
+
+.flex_4 #servicios {
+	padding-right: 96px;
+}
+
+.flex_4 h2 {
+	font-size: 48px;
+	margin-bottom: 48px;
+}
+
+.flex_4 li {
+	margin: 30px 0 30px 24px;
+}
+
+.flex_4 strong {
+	background-color: #fcee21;
+	padding-right: 10px; padding-left: 5px;
+	font-size: 32px;
+}
+
+.flex_5 {
+	flex-direction: column;
+	margin: 64px 0 128px 0;
+}
+
+.flex_5a {
+	margin: 10px 0 128px 0;
+	justify-content: flex-start;
+}
+
+.flex_5a p span {
+	background-color: black;
+	color: #f2f2f2;
+	font-size: 48px;
+	line-height: 160%;
+	
+	padding: 0 24px 0 24px;
+}
+
+.flex_5a aside {
+	font-size: 24px;
+	font-weight: 700;
+	
+	display: inline-block;
+	background-color: #fcee21;
+	padding: 0 30px 0 14px;
+	margin-top: 24px;
+}
+
+.flex_5a form {
+	margin: 0 auto 0;
+}
+
+span {
+	color: red;
+}
+
+.flex_5b {
+	justify-content: space-between;
+	margin-right: 256px;
+}
+
+.flex_5b p {
+	font-size: 26px;
+	color: #686868bf;
+	font-weight: 700;
+	align-self: center;
+}
+
+footer p {
+	font: 900 36px 'Coiny', system-ui;
+}
+
+footer a {
+	align-self: center;
+	margin-left: 112px;
+	
+	text-decoration: none;
+	color: black;
+	
+	font-size: 18px;
+	text-align: center;
+}
+
+footer a:hover {
+	text-decoration: underline;
+	color:#26313b;
+	font-size: 20px;
+	margin-left: 108px;
+	
+	transition: 0.25s linear;
 }
