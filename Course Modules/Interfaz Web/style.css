@@ -150,8 +150,12 @@ hr {
 }
 
 .flex_5a {
-	margin: 10px 0 128px 0;
-	justify-content: flex-start;
+	margin: 10px 0 160px 0;
+	justify-content: flex-end;
+}
+
+.flex_5a div {
+	margin: 0 auto 0 0;
 }
 
 .flex_5a p span {
@@ -173,17 +177,65 @@ hr {
 	margin-top: 24px;
 }
 
-.flex_5a form {
-	margin: 0 auto 0;
+.flex_5a .contact-div {
+	margin: 0;
+	height: 600px;
 }
 
-span {
+.flex_5a form {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+}
+
+.flex_5a .contact-text {
+	font-size: 24px;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+
+.flex_5a .contact-input, .flex_5a .contact-messageinput {
+	width: 600px;
+	margin-bottom: 28px;
+	
+	font-size: 24px;
+	padding: 10px;
+}
+
+.flex_5a .contact-input::placeholder, .flex_5a .contact-messageinput::placeholder {
+	font-size: 24px;
+}
+
+.flex_5a .contact-input {
+	height: 60px;
+}
+
+.flex_5a .contact-messageinput {
+	height: 160px;
+}
+
+.flex_5a .reset-button, .flex_5a .submit-button {
+	color:#f2f2f2;
+	background-color: black;
+	
+	font-size: 24px;
+	padding: 8px 64px 8px 64px;
+	text-align: center;
+	
+	cursor: pointer;
+}
+
+.flex_5a .reset-button {
+	transform: translateX(60%);
+}
+
+.flex_5a span {
 	color: red;
 }
 
 .flex_5b {
 	justify-content: space-between;
-	margin-right: 256px;
+	margin: 0 248px 128px 0;
 }
 
 .flex_5b p {
