@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Coiny&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
-	padding: 0; 
+	padding: 0;
 	margin: 0;
 }
 
 html {
 	background-color: #fcee21;
 	padding: 48px 128px 0px 128px;
-	
+
 	display: flex;
 	justify-content: space-evenly;
 	margin: auto;
@@ -17,24 +17,31 @@ html {
 body {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
-	
+
 	background-color: #f2f2f2;
 	color: #26313b;
-	
+
 	padding: 20px 140px 140px;
-	
+
 	width: clamp(500px, 100dvw, 1659px);
 	background: linear-gradient(to top, #fcee21 9%, #f2f2f2 0);
 }
 
-.flex_1, .flex_2, .flex_3, .flex_4, .flex_5, .flex_5a, .flex_5b, footer {
+.flex_1,
+.flex_2,
+.flex_3,
+.flex_4,
+.flex_5,
+.flex_5a,
+.flex_5b,
+footer {
 	display: flex;
-	flex-direction: row;
 }
+
+/*First Section - WWWapas preview*/
 
 .flex_1 {
 	padding-top: 40px;
-	
 	justify-content: flex-end;
 	align-items: center;
 }
@@ -42,7 +49,6 @@ body {
 .flex_1 a {
 	text-decoration: none;
 	color: #26313b;
-	
 	padding-left: 156px;
 	font-size: 24px;
 }
@@ -61,18 +67,18 @@ body {
 	line-height: 0px;
 	padding: 60px 60px 0 0;
 	color: black;
-}.flex_2 h1 strong {
+}
+
+.flex_2 h1 strong {
 	font: 700 96px 'Coiny', system-ui;
 }
 
 .flex_2 em {
 	font-style: normal;
 	font-size: 22px;
-	
 	background-color: #fcee21;
 	padding: 0 32px 0 16px;
 	text-align: center;
-	
 	display: inline-block;
 	margin-bottom: 80px;
 }
@@ -81,29 +87,33 @@ body {
 	font-size: 26px;
 }
 
+.flex_2 img {
+	vertical-align: middle;
+}
+
 .flex_3 {
 	justify-content: space-around;
 	margin-top: 64px;
 	margin-bottom: 96px;
 }
 
-.quienes_somos {
+.flex_3 .section-1 {
 	margin-right: auto;
 }
 
-.que_hacemos {
+.flex_3 .section-2 {
 	padding-right: 68px;
 }
 
-.flex_3 h2 {	
+.flex_3 h2 {
 	font-size: 30px;
 	font-weight: 900;
 	background-color: #fcee21;
-	
+
 	display: inline-block;
 	padding-right: 10px;
 	padding-left: 4px;
-	
+
 	margin: 10px 0 10px 0;
 }
 
@@ -111,13 +121,7 @@ body {
 	font-size: 25px;
 }
 
-hr {
-	display: flex;
-	justify-content: center;
-	margin: 32px 0 32px 0;
-	border: 1px solid #000000ef;
-	filter: blur(1px);
-}
+/*Second Section, WWWapas offer*/
 
 .flex_4 {
 	justify-content: space-between;
@@ -140,9 +144,12 @@ hr {
 
 .flex_4 strong {
 	background-color: #fcee21;
-	padding-right: 10px; padding-left: 5px;
+	padding-right: 10px;
+	padding-left: 5px;
 	font-size: 32px;
 }
+
+/*Third Section, contact WWWapas*/
 
 .flex_5 {
 	flex-direction: column;
@@ -163,14 +170,13 @@ hr {
 	color: #f2f2f2;
 	font-size: 48px;
 	line-height: 160%;
-	
 	padding: 0 24px 0 24px;
 }
 
 .flex_5a aside {
 	font-size: 24px;
 	font-weight: 700;
-	
+
 	display: inline-block;
 	background-color: #fcee21;
 	padding: 0 30px 0 14px;
@@ -194,15 +200,17 @@ hr {
 	margin-bottom: 10px;
 }
 
-.flex_5a .contact-input, .flex_5a .contact-messageinput {
+.flex_5a .contact-input,
+.flex_5a .contact-messageinput {
 	width: 600px;
 	margin-bottom: 28px;
-	
+
 	font-size: 24px;
 	padding: 10px;
 }
 
-.flex_5a .contact-input::placeholder, .flex_5a .contact-messageinput::placeholder {
+.flex_5a .contact-input::placeholder,
+.flex_5a .contact-messageinput::placeholder {
 	font-size: 24px;
 }
 
@@ -214,14 +222,13 @@ hr {
 	height: 160px;
 }
 
-.flex_5a .reset-button, .flex_5a .submit-button {
-	color:#f2f2f2;
+.flex_5a .reset-button,
+.flex_5a .submit-button {
+	color: #f2f2f2;
 	background-color: black;
-	
 	font-size: 24px;
 	padding: 8px 64px 8px 64px;
 	text-align: center;
-	
 	cursor: pointer;
 }
 
@@ -245,6 +252,8 @@ hr {
 	align-self: center;
 }
 
+/*End Of Page*/
+
 footer p {
 	font: 900 36px 'Coiny', system-ui;
 }
@@ -252,19 +261,29 @@ footer p {
 footer a {
 	align-self: center;
 	margin-left: 112px;
-	
+
 	text-decoration: none;
 	color: black;
-	
+
 	font-size: 18px;
 	text-align: center;
 }
 
 footer a:hover {
 	text-decoration: underline;
-	color:#26313b;
+	color: #26313b;
 	font-size: 20px;
 	margin-left: 108px;
-	
+
 	transition: 0.25s linear;
+}
+
+/*Miscellaneous*/
+
+hr {
+	display: flex;
+	justify-content: center;
+	margin: 32px 0 32px 0;
+	border: 1px solid #0000001f;
+	filter: blur(1px);
 }
