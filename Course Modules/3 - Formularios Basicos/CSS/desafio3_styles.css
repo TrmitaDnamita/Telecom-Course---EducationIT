@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+	box-sizing: content-box;
+}
+
+.log-in {
+	width: 650px;
+	height: 100%;
+	
+	display: flex;
+	justify-self: center;
+	align-self: center;
+	flex-direction: column;
+	
+	font-family: 'Mulish', sans-serif;
+	font-size: 18.67px;
+	
+	border: 2px solid #d4dcfc;
+	border-radius: 2px;
+}
+
+div > :first-child {
+	display: block;
+	
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+	color: #04146c;
+}
+
+.log-in-form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+input, button {
+	width: 500px;
+	height: 50px;
+	
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+input {
+	color: #414166;
+}
+
+button {
+	font-size: 20px;
+	color: white;
+	background-color: #0a2ff1;
+	cursor: pointer;
+}
+
+hr {
+	border: 1px solid #0000008f;
+	width: 520px
+}
+
+a {
+	text-decoration: none;
+}
+
+div > p:not(:first-child) {
+	text-align: center;
+	color: #0a2ff1;
+}
