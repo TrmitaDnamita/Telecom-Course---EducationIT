@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'Source Sans 3', sans-serif;
+}
+
+body {
+	text-align: center;
+}
+
+header {
+	background-color: #04146c;
+	color: white;
+}
+
+header p {
+	font-size: 38.667px;
+}
+
+main {
+	color: #04146c;
+}
+
+main h1 {
+	font-size: 88px;
+	font-weight: 900;
+}
+
+main p {
+	font-size: 26.667px;
+}
+
+p em {
+	font-weight: 700;
+}
+
+.Coworking-Background-IMG {
+	margin: 15px;
+	border: 1px solid #04146c;
+	width: 40%;
+}
+
+footer {
+	background-color: #edf7ff;
+	margin: 1px;
+}
+
+footer p {
+	font-size: 24px;
+}
