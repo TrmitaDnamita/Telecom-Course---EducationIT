@@ -1,11 +1,11 @@
 <!-- Título principal generado con PHP -->
 <h1>
-	<?php echo "Hola Mundo" // imprime texto usando PHP ?>
+	<?php echo "Hola World" // imprime texto usando PHP ?>
 </h1>
 
 <!-- Título secundario usando la sintaxis corta de PHP -->
 <h2>
-	<?= "Funciona?.. FUNCIONA!"; // equivalente a echo ?>
+	<?= "Funciona?.. IT'S ALIVE!"; // equivalente a echo ?>
 </h2>
 
 <?php
@@ -17,7 +17,7 @@
 <a href="?roll=1">
 	<!-- OJO: los estilos CSS deben usar ':' no '=' -->
 	<button style="padding: 10px; margin: 10px">
-		Press For Luck (PHP)
+		Press For D20 Luck (PHP)
 	</button>
 </a>
 
@@ -31,11 +31,11 @@
 	onclick="rollD8()" 
 	style="padding: 10px; margin: 10px"
 >
-	Press For Luck (JS)
+	Press For D8 Luck (JS)
 </button>
 
 <!-- Elemento donde se mostrará el resultado de la tirada de D8 -->
-<h2 id="result">???</h2>
+<h2 id="result">-</h2>
 
 <!-- Estilos visuales para centrar el contenido -->
 <style>

@@ -13,7 +13,7 @@
 <body>
   <div class="first_page">
     <header class="flex_1">
-      <img style="margin-right: auto;" src="img-folder/logos/logo.svg" alt="wwwapas-logo">
+      <img src="img-folder/logos/logo.svg" alt="wwwapas-logo">
       <nav>
         <a href="#servicios">Servicios</a>
         <a href="#contacto">Contacto</a>
@@ -58,7 +58,7 @@
       </div>
     </main>
   </div>
-  <hr id="servicios">
+  <hr id="divisor-servicios">
   <div class="flex_4">
     <img src="img-folder/img-servicios.svg" alt="Servicios_wwwapas">
     <div>
@@ -83,12 +83,12 @@
       </div>
       <div class="contact-div">
         <form action="contact-wwwapas.php">
-          <label for="name" class="contact-text">Nombre <span>*</span></label>
-          <input type="text" class="contact-input" name="name" placeholder="Ingrese su Nombre" required>
-          <label for="email" class="contact-text">Email <span>*</span></label>
-          <input type="text" class="contact-input" name="email" placeholder="Ingrese su E-Mail" required>
+          <label id="name" for="name" class="contact-text">Nombre <span>*</span></label>
+          <input type="text" class="contact-input" name="name_input" autocomplete="off" placeholder="Ingrese su Nombre" required>
+          <label id="email" for="email" class="contact-text">Email <span>*</span></label>
+          <input type="text" class="contact-input" name="email_input" autocomplete="off" placeholder="Ingrese su E-Mail" required>
           <label for="message" class="contact-text">Mensaje <span>*</span></label>
-          <textarea name="message" class="contact-messageinput" placeholder="Su Mensaje" required></textarea>
+          <textarea name="message_input" class="contact-messageinput" placeholder="Su Mensaje" required></textarea>
           <div class="contact_buttons">
             <button type="submit" class="submit-button">Enviar Consulta</button>
             <button type="reset" class="reset-button">Borrar</button>
@@ -98,10 +98,18 @@
     </div>
     <div class="flex_5b">
       <p>redes<br />wwwapas</p>
-      <a href="https://www.instagram.com/" title="Instagram-WWWapas" target="_blank"><img src="img-folder/logos/instagram-icon.svg" alt="Instagram-WWWapas"></a>
-      <a href="https://dribbble.com/" title="Dribbble-WWWapas" target="_blank"><img src="img-folder/logos/dribbble-icon.svg" alt="Dribbble-WWWapas"></a>
-      <a href="https://www.linkedin.com/" title="LinkedIn-WWWapas" target="_blank"><img src="img-folder/logos/linkedin-icon.svg" alt="LinkedIn-WWWapas"></a>
-      <a href="https://www.facebook.com/" title="Facebook-WWWapas" target="_blank"><img src="img-folder/logos/facebook-icon.svg" alt="Facebook-WWWapas"></a>
+      <a href="https://www.instagram.com/" title="Instagram-WWWapas" target="_blank">
+        <img src="img-folder/logos/instagram-icon.svg" alt="Instagram-WWWapas">
+      </a>
+      <a href="https://dribbble.com/" title="Dribbble-WWWapas" target="_blank">
+        <img src="img-folder/logos/dribbble-icon.svg" alt="Dribbble-WWWapas">
+      </a>
+      <a href="https://www.linkedin.com/" title="LinkedIn-WWWapas" target="_blank">
+        <img src="img-folder/logos/linkedin-icon.svg" alt="LinkedIn-WWWapas">
+      </a>
+      <a href="https://www.facebook.com/" title="Facebook-WWWapas" target="_blank">
+        <img src="img-folder/logos/facebook-icon.svg" alt="Facebook-WWWapas">
+      </a>
     </div>
   </div>
   <footer>
