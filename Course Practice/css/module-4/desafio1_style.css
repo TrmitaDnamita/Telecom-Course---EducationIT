@@ -9,7 +9,7 @@ body {
 	font-family: 'Mulish', sans-serif;
 	color: #04146c;
 	
-	background-image: url("../../img/module-4/M4-desafio1-fondo.png");
+	background-image: url("../../res/img/module-4/M4-desafio1-fondo.png");
 }
 
 .contenedor-padre {
@@ -17,7 +17,7 @@ body {
 	margin: auto;
 	padding: 4% 0 4% 0;
 	
-	background-image: url("../../img/module-4/M4-desafio1-fondo-form.png");
+	background-image: url("../../res/img/module-4/M4-desafio1-fondo-form.png");
 	background-repeat: no-repeat;
 }
 
