@@ -1,5 +1,129 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto%20Slab:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* Variables (Propiedades Custom)*/
+
+:root {
+	/* Colores */
+	--primary-color: #41afd1;
+	/* Tipografía */
+	--font-family-primary: 'Roboto Slab', sans-serif;
+	/* Espaciado */
+	--spacing-none: 0px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 48px;
+	/* Bordes y Sombras */
+  --border-radius-sm: 8px;
+  --border-radius-lg: 24px;
+  --shadow-standard: 1px 1px 20px;
+	/* Otros */
+	--text-spacing-standard: 1.5;
+}
+
+/* Estilos Globales y Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+	color-scheme: light dark;
+	font-family: var(--font-family-primary);
+}
+
+body {
+	min-height: 100dvh;
+	line-height: var(--text-spacing-standard);
+	color: var(--primary-color);
+}
+
+/* Componentes y Clases, Mobile First*/
+
+h1 {
+	text-align: center;
+	
+	text-shadow: var(--shadow-standard);
+	padding-block: var(--spacing-md);
+}
+
+.row-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+	gap: var(--spacing-none);
+}
+
+.media-element, .audio-player {
+	display: block;
+	box-shadow: var(--shadow-standard);
+	margin: var(--spacing-sm) auto;
+}
+
+.media-element {
+	aspect-ratio: 4/3;
+	width: 100%;
+	max-width: 400px;
+	
+	border-radius: var(--border-radius-sm);
+}
+
+.audio-player {
+	width: 80%;
+	max-width: 350px;
+	height: 50px;
+	aspect-ratio: unset;
+	border-radius: var(--border-radius-lg);
+}
+
+iframe {
+	border: none;
+}
+
+@media screen and (min-width: 768px) {
+	body {
+		max-width: 960px;
+		margin-inline: auto;
+		padding: var(--spacing-lg);
+	}
+	
+	h1 {
+		padding-block: var(--spacing-xl);
+	}
+	
+	.row-content {
+		flex-direction: row;
+		flex-wrap: wrap;
+		gap: var(--spacing-md);
+	}
+	
+	.media-element {
+		max-width: 45%;
+		aspect-ratio: 16/9;
+		margin: var(--spacing-md) auto;
+	}
+	
+	.audio-player {
+		width: 80%;
+		max-width: 450px;
+	}
+}
+
+@media screen and (min-width: 1444px) {
+	body {
+		max-width: 1280px;
+		padding: var(--spacing-none);
+	}
+	
+}
+/*-------------------- Hall of Shame --------------------*/
+
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto%20Slab:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
 	margin: 0;
 	box-sizing: border-box;
@@ -78,5 +202,6 @@ audio {
 	iframe, video, audio {
 		width: 200px;
 		height: 100px;
+		
 	}
-}
+} */
