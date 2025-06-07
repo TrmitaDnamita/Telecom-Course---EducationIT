@@ -5,14 +5,16 @@
 :root {
 	/* Colores */
 	--primary-color: #41afd1;
+	--light-color: #ffffff;
+	--dark-color: #162e35;
 	/* Tipografía */
 	--font-family-primary: 'Roboto Slab', sans-serif;
 	/* Espaciado */
 	--spacing-none: 0px;
-  --spacing-sm: 8px;
-  --spacing-md: 16px;
-  --spacing-lg: 24px;
-  --spacing-xl: 48px;
+  --spacing-sm: 10px;
+  --spacing-md: 18px;
+  --spacing-lg: 28px;
+  --spacing-xl: 64px;
 	/* Bordes y Sombras */
   --border-radius-sm: 8px;
   --border-radius-lg: 24px;
@@ -43,7 +45,7 @@ body {
 
 /* Componentes y Clases, Mobile First*/
 
-h1 {
+h1, h2, .gastos caption {
 	text-align: center;
 	
 	text-shadow: var(--shadow-standard);
@@ -54,7 +56,7 @@ h1 {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	
+	justify-content: stretch;
 	gap: var(--spacing-none);
 }
 
@@ -97,8 +99,6 @@ iframe {
 	
 	.row-content {
 		flex-direction: row;
-		flex-wrap: wrap;
-		gap: var(--spacing-md);
 	}
 	
 	.media-element {
@@ -120,6 +120,34 @@ iframe {
 	}
 	
 }
+
+/* TABLAS */
+.gastos {
+	margin: auto;
+	box-shadow: var(--shadow-standard);
+}
+
+.gastos caption {
+	caption-side: bottom;
+}
+
+.gastos tbody {
+	background-color: var(--light-color);
+	color: var(--dark-color);
+	
+	font-weight: bold;
+}
+
+.gastos tfoot, .gastos thead {
+	background-color: var(--dark-color);
+}
+
+.gastos th, .gastos td {
+	border: 1px solid var(--primary-color);
+	padding: var(--spacing-sm) var(--spacing-md);
+}
+/* FIN TABLAS */
+
 /*-------------------- Hall of Shame --------------------*/
 
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto%20Slab:ital,wght@0,100..900;1,100..900&display=swap');
