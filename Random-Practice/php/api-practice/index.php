@@ -16,7 +16,7 @@
 		</section>
 		<hgroup>
 			<h3>
-				<?=get_daysleftmessage($mData["days-t	o"])?>
+				<?=get_daysleftmessage($mData["days-to"])?>
 			</h3>
 			<p>
 				<?= get_spanishdate($mData["date"]) ?>

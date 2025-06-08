@@ -1,7 +1,7 @@
 <?php
 $name = "Fran";
 $age = 28;
-$birthday = ["day" => "5", "month" => "6", "year" => "1995"];
+$birthday = ["day" => "7", "month" => "6", "year" => "1995"];
 
 define(
 	'SOME_LOGO', 
@@ -34,7 +34,7 @@ define(
 			FELIZ CUMPLEAÑOS, FELICES " . ($today['tm_year'] - $born_in_tm_year) . " AÑOS! 🥳</strong></h2>";
 			break;
 		case 'already_had_birthday':
-			echo "<h2>😏 Bienvenido $name. Vemos que tu edad es exactamente ". $today['tm_year'] - $born_in_tm_year . " años... Te querías sacar " . ($actual_age_flag - $age) . " años pillín 😉</h2>";
+			//echo "<h2>😏 Bienvenido $name. Vemos que tu edad es exactamente ". $today['tm_year'] - $born_in_tm_year . " años... Te querías sacar " . ($actual_age_flag - $age) . " años pillín 😉</h2>";
 			break;
 		default:
 			echo "<h2>✅ Bienvenido $name. Vemos que tu edad es exactamente $age años 🎈</h2>";
