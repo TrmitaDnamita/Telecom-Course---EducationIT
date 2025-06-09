@@ -6,8 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Proyecto Integrador</title>
 
-  <link rel="stylesheet" href="style.css">
+  <link id="theme-style" rel="stylesheet" href="./old-style.css">
   <link rel="icon" href="img-folder/logos/ico.png" type="image/x-icon">
+  <script src="functions.js"></script>
 </head>
 
 <body>
@@ -17,7 +18,7 @@
       class="flex flex-grow justify-end basis-0">
       <a href="#servicios">Servicios</a>
       <a href="#contacto">Contacto</a>
-      <a href="#">Login</a>
+      <a class="cursor-finger" onclick="switchStyle('style.css', 'old-style.css', 'theme-style')" title="Back to the Past <<">Login</a>
     </nav>
   </header>
   <main class="main-introduction flex align-center">
@@ -31,7 +32,7 @@
     </article>
     <img class="center-img width-4 bck-padding-md" src="img-folder/foto.png" alt="wwwapas">
   </main>
-  <div class="aboutus-section flex flex-wrap flex-gap-lg iline-margin-xs">
+  <div class="aboutus-section flex flex-wrap">
     <section>
       <h2 class="em-background inline-block">¡Hola! Somos SOFI & JULIA,</h2>
       <p>las social media managers, las creadoras de contenido,<br /> las
@@ -53,7 +54,7 @@
     </section>
   </div>
   
-  <hr class="division-spacing">
+  <hr id="servicios" class="division-spacing">
   
   <div class="servicios-section flex">
     <img class="center-img width-4 bck-padding-md" src="img-folder/img-servicios.svg" alt="Servicios_wwwapas">
@@ -65,7 +66,7 @@
       <li>Respuestas a mensajes y consultas</li>
       <li>Segmentación de promociones según<br /> el público objetivo la pauta publicitaria</li>
       <li>Diagramamos un calendario que se ajuste<br /> a los objetivos de la empresa</li>
-      <li class="em-background iline-padding-xs text-bold"><strong>¡Empezamos a comunicar!</strong></li>
+      <li><strong class="em-background iline-padding-xs text-bold">¡Empezamos a comunicar!</strong></li>
     </ol>
   </div>
   
@@ -79,29 +80,39 @@
           <span class="iline-padding-xs">contactemos con vos?</span>
         </strong>
       </p>
-      <aside class="em-background inline-block iline-padding-xs">Envíanos tu consulta>></aside>
+      <aside class="em-background inline-block iline-padding-xs text-bold">
+        Envíanos tu consulta>>
+      </aside>
     </section>
     <section class="form-section">
       <form class="flex flex-column" id="contact-form" action="contact-wwwapas.php" method="post">
-        <label class="text-bold" for="name" id="name">Nombre <span class="color-red">*</span></label>
+        <label class="text-bold" for="name" id="name">Nombre 
+          <span class="color-red shadow-faint">*</span>
+        </label>
         <input type="text" name="name_input" autocomplete="off" placeholder="Ingrese su Nombre" required>
 
-        <label class="text-bold" for="email" id="email">Email <span class="color-red">*</span></label>
+        <label class="text-bold" for="email" id="email">Email 
+          <span class="color-red shadow-faint">*</span>
+        </label>
         <input type="text" name="email_input" autocomplete="off" placeholder="Ingrese su E-Mail" required>
 
-        <label class="text-bold" for="message" id="message">Mensaje <span class="color-red">*</span></label>
+        <label class="text-bold" for="message" id="message">Mensaje 
+          <span class="color-red shadow-faint">*</span>
+        </label>
         <textarea name="message_input" placeholder="Su Mensaje" required></textarea>
       </form>
-      <button type="submit" form="contact-form"> Enviar Consulta</button>
-      <button type="reset" form="contact-form"> Borrar</button>
+      <div class="flex justify-between">
+        <button class="send-button str-background form-buttons" type="submit" form="contact-form"> Enviar Consulta</button>
+        <button class="reset-button str-background form-buttons" type="reset" form="contact-form"> Borrar</button>
+      </div>
     </section>
   </article>
   
-  <hr class="division-spacing">
+  <hr id="contacto" class="division-spacing">
   
-  <footer class="hiperlinks-section">
-    <section class="social-media-section">
-      <h2>redes<br />wwwapas</h2>
+  <footer class="hiperlinks-section flex flex-column flex-gap-md">
+    <section class="social-media-section flex">
+      <h2 class="wwwapas-redes">redes<br/>wwwapas</h2>
       <a href="https://www.instagram.com/" title="Instagram-WWWapas" target="_blank">
         <img src="img-folder/logos/instagram-icon.svg" alt="Instagram-WWWapas" />
       </a>
@@ -115,9 +126,19 @@
         <img src="img-folder/logos/facebook-icon.svg" alt="Facebook-WWWapas" />
       </a>
     </section>
-    <p>wwwapas</p>
-    <p><a href="mailto:wwwapas_sm@gmail.com">wwwapas_sm@gmail.com</a></p>
+    <article class="wwwapas-mailto flex">
+      <h3 class="font-coiny">wwwapas</h3>
+      <p><a class="mailto" href="mailto:wwwapas_sm@gmail.com">wwwapas_sm@gmail.com</a></p>
+    </article>
   </footer>
+  
+  <!------------------------------------------>
+	<a href="#" id="goUp" style="display: none;">
+		<svg width="50" height="50" viewBox="0 -12.5 50 50">
+			<path class="arrowheadUp-shadow" d="M 10, 20 L 25, 5 L 40, 20" />
+			<path class="arrowheadUp" d="M 10, 20 L 25, 5 L 40, 20" />
+		</svg>
+	</a>
 </body>
 
 </html>

@@ -1,0 +1,696 @@
+/* Hall of Shame - Old no longer working, AI made a replacement to preview the intended design */
+/*
+.flex_1,
+.flex_2,
+.flex_3,
+.flex_4,
+.flex_5,
+.flex_5a,
+.flex_5b,
+footer {
+	display: flex;
+}
+
+.flex_1 {
+	padding-top: 40px;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.flex_1 a {
+	text-decoration: none;
+	color: #26313b;
+	padding-left: 156px;
+	font-size: 24px;
+}
+
+.flex_1 a:hover {
+	font-weight: 700;
+}
+
+.flex_2 {
+	margin-top: 50px;
+	justify-content: space-between;
+}
+
+.flex_2 h1 {
+	font-size: 56px;
+	line-height: 0px;
+	padding: 60px 60px 0 0;
+	color: black;
+}
+
+.flex_2 h1 strong {
+	font: 700 96px 'Coiny', system-ui;
+}
+
+.flex_2 em {
+	font-style: normal;
+	font-size: 22px;
+	background-color: #fcee21;
+	padding: 0 32px 0 16px;
+	text-align: center;
+	display: inline-block;
+	margin-bottom: 80px;
+}
+
+.flex_2 p {
+	font-size: 26px;
+}
+
+.flex_2 img {
+	vertical-align: middle;
+}
+
+.flex_3 {
+	justify-content: space-around;
+	margin-top: 64px;
+	margin-bottom: 96px;
+}
+
+.flex_3 .section-1 {
+	margin-right: auto;
+}
+
+.flex_3 .section-2 {
+	padding-right: 68px;
+}
+
+.flex_3 h2 {
+	font-size: 30px;
+	font-weight: 900;
+	background-color: #fcee21;
+
+	display: inline-block;
+	padding-right: 10px;
+	padding-left: 4px;
+
+	margin: 10px 0 10px 0;
+}
+
+.flex_3 p {
+	font-size: 25px;
+}
+
+.flex_4 {
+	justify-content: space-between;
+	margin: 96px 166px 96px 0;
+	font-size: 24px;
+}
+
+.flex_4 #servicios {
+	padding-right: 96px;
+}
+
+.flex_4 h2 {
+	font-size: 48px;
+	margin-bottom: 48px;
+}
+
+.flex_4 li {
+	margin: 30px 0 30px 24px;
+}
+
+.flex_4 strong {
+	background-color: #fcee21;
+	padding-right: 10px;
+	padding-left: 5px;
+	font-size: 32px;
+}
+
+.flex_5 {
+	flex-direction: column;
+	margin: 64px 0 128px 0;
+}
+
+.flex_5a {
+	margin: 10px 0 160px 0;
+	justify-content: flex-end;
+}
+
+.flex_5a div {
+	margin: 0 auto 0 0;
+}
+
+.flex_5a p span {
+	background-color: black;
+	color: #f2f2f2;
+	font-size: 48px;
+	line-height: 160%;
+	padding: 0 24px 0 24px;
+}
+
+.flex_5a aside {
+	font-size: 24px;
+	font-weight: 700;
+
+	display: inline-block;
+	background-color: #fcee21;
+	padding: 0 30px 0 14px;
+	margin-top: 24px;
+}
+
+.flex_5a .contact-div {
+	margin: 0;
+	height: 600px;
+}
+
+.flex_5a form {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+}
+
+.flex_5a .contact-text {
+	font-size: 24px;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+
+.flex_5a .contact-input,
+.flex_5a .contact-messageinput {
+	width: 600px;
+	margin-bottom: 28px;
+
+	font-size: 24px;
+	padding: 10px;
+}
+
+.flex_5a .contact-input::placeholder,
+.flex_5a .contact-messageinput::placeholder {
+	font-size: 24px;
+}
+
+.flex_5a .contact-input {
+	height: 60px;
+}
+
+.flex_5a .contact-messageinput {
+	height: 160px;
+}
+
+.flex_5a .reset-button,
+.flex_5a .submit-button {
+	color: #f2f2f2;
+	background-color: black;
+	font-size: 24px;
+	padding: 8px 64px 8px 64px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.flex_5a .reset-button {
+	transform: translateX(60%);
+}
+
+.flex_5a span {
+	color: red;
+}
+
+.flex_5b {
+	justify-content: space-between;
+	margin: 0 248px 128px 0;
+}
+
+.flex_5b p {
+	font-size: 26px;
+	color: #686868bf;
+	font-weight: 700;
+	align-self: center;
+}
+
+footer p {
+	font: 900 36px 'Coiny', system-ui;
+}
+
+footer a {
+	align-self: center;
+	margin-left: 112px;
+
+	text-decoration: none;
+	color: black;
+
+	font-size: 18px;
+	text-align: center;
+}
+
+footer a:hover {
+	text-decoration: underline;
+	color: #26313b;
+	font-size: 20px;
+	margin-left: 108px;
+
+	transition: 0.25s linear;
+}
+
+hr {
+	display: flex;
+	justify-content: center;
+	margin: 32px 0 32px 0;
+	border: 1px solid #0000001f;
+	filter: blur(1px);
+}
+
+@media (max-width: 768px) {
+	html, body {
+		padding: 16px;
+		margin: 0;
+		width: 100%;
+		box-sizing: border-box;
+		flex-direction: column;
+	}
+	
+	body {
+		background: linear-gradient(to top, #fcee21 3.2%, #f2f2f2 0);
+	}
+	
+	.flex_1 {
+		flex-direction: column;
+		align-items: center;
+		gap: 12px;
+	}
+	
+	.flex_1 img {
+		margin: auto 0;
+	}
+	
+	.flex_1 a {
+		padding-left: 0;
+		font-size: 20px;
+	}
+		
+	.flex_2 {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		margin: 0;
+		padding: 0;
+	}
+	.flex_2 h1 {
+		font-size: 36px;
+		padding: 24px 0 8px 0;
+	}
+	.flex_2 h1 strong {
+		font-size: 64px;
+	}
+	.flex_2 em {
+		font-size: 18px;
+		padding: 0 12px;
+		margin-bottom: 32px;
+	}
+	.flex_2 p {
+		font-size: 20px;
+		padding: 0 12px;
+	}
+	
+	.flex_2 img {
+		width: 80%;
+	}
+	
+	.flex_3 {
+		flex-direction: column;
+		align-items: center;
+		gap: 40px;
+		margin: 48px 0;
+	}
+	.flex_3 h2 {
+		font-size: 24px;
+		margin: auto 10px;
+	}
+	.flex_3 p {
+		font-size: 20px;
+		padding: 0 12px;
+		text-align: center;
+	}
+	
+	.flex_3 .section-2 {
+		padding-right: 0%;
+	}
+	
+	.flex_4 {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		padding: 0;
+		margin: 48px 0;
+	}
+	.flex_4 #servicios {
+		padding-right: 0;
+	}
+	.flex_4 h2 {
+		font-size: 32px;
+		margin-bottom: 24px;
+	}
+	.flex_4 li {
+		font-size: 20px;
+		margin: 16px 0;
+		list-style-position: inside;
+	}
+	.flex_4 strong {
+		font-size: 24px;
+		padding: 0 8px;
+	}
+	
+	.flex_4 img {
+		width: 80%
+	}
+
+	.flex_5 {
+		margin: 16px 0;
+	}
+	.flex_5a {
+		flex-direction: column;
+		align-items: center;
+		margin: 0 0 32px 0;
+		padding: 0;
+	}
+	
+	.flex_5a div {
+		margin: 0;
+	}
+	
+	.flex_5a p {
+		margin: auto 2px;
+		text-align: center;
+		font-size: 18px;
+	}
+	
+	.flex_5a p span {
+		font-size: 24px;
+	}
+	
+	.flex_5a aside {
+		margin: 2px 0 20px 0;
+	}
+	
+	.flex_5a .contact-div {
+		width: 100%;
+		height: auto;
+	}
+	.flex_5a form {
+		width: 100%;
+		align-items: center;
+	}
+	.flex_5a .contact-text {
+		font-size: 20px;
+		text-align: center;
+	}
+	.flex_5a .contact-input,
+	.flex_5a .contact-messageinput {
+		width: 90%;
+		font-size: 20px;
+	}
+	.flex_5a .contact-input {
+		height: 48px;
+	}
+	.flex_5a .contact-messageinput {
+		height: 120px;
+	}
+	.flex_5a .submit-button,
+	.flex_5a .reset-button {
+		
+		padding: 12px;
+		font-size: 20px;
+		margin: 8px auto;
+		transform: none;
+	}
+	
+	.flex_5b {
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-evenly;
+		margin: 0;
+	}
+	.flex_5b p {
+		font-size: 20px;
+		text-align: center;
+		margin-bottom: 16px;
+	}
+	
+	footer {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+	footer a {
+		display: block;
+		margin: 8px 0;
+		font-size: 18px;
+	}
+}
+*/
+
+/* Hall of Shame - Updated Styles Matching New HTML Structure */
+
+@import url('https://fonts.googleapis.com/css2?family=Coiny&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.header-nav,
+.main-introduction,
+.aboutus-section,
+.servicios-section,
+.contact-section,
+.hiperlinks-section,
+.social-media-section,
+.wwwapas-mailto,
+footer {
+  display: flex;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	padding: 16px;
+	background-color: #fcee21;
+	box-sizing: border-box;
+	flex-direction: column;
+	font-family: 'Roboto', system-ui;
+}
+	
+body {
+	background: linear-gradient(to top, #fcee21 3.2%, #f2f2f2 0);
+	width: 80%;
+	background-color: #f2f2f2;
+	padding-inline: 128px;
+	padding-block: 32px;
+}
+
+.header-nav {
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.header-nav a {
+  text-decoration: none;
+  color: #26313b;
+  padding-left: 40px;
+  font-size: 24px;
+}
+
+.header-nav a:hover {
+  font-weight: 700;
+}
+
+.main-introduction {
+  margin-top: 50px;
+  justify-content: space-between;
+}
+
+.wwwapas-header {
+  font-size: 56px;
+  line-height: 0px;
+  padding: 60px 60px 0 0;
+  color: black;
+}
+
+.wwwapas-header strong {
+  font: 700 96px 'Coiny', system-ui;
+}
+
+.em-background em {
+  font-style: normal;
+  font-size: 22px;
+  background-color: #fcee21;
+  padding: 0 32px 0 16px;
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 80px;
+}
+
+.main-introduction p {
+  font-size: 26px;
+}
+
+.main-introduction img {
+  vertical-align: middle;
+}
+
+.aboutus-section {
+  justify-content: space-around;
+  margin-top: 64px;
+  margin-bottom: 96px;
+}
+
+.aboutus-section h2 {
+  font-size: 30px;
+  font-weight: 900;
+  background-color: #fcee21;
+  display: inline-block;
+  padding: 0 10px;
+  margin: 10px 0;
+}
+
+.aboutus-section p {
+  font-size: 25px;
+}
+
+.servicios-section {
+  justify-content: space-between;
+  margin: 96px 166px 96px 0;
+  font-size: 24px;
+}
+
+.servicios-section ol {
+  padding-right: 96px;
+}
+
+.servicios-section h2 {
+  font-size: 48px;
+  margin-bottom: 48px;
+}
+
+.servicios-section li {
+  margin: 30px 0 30px 24px;
+}
+
+.servicios {
+  background-color: #fcee21;
+  padding: 0 10px;
+  font-size: 32px;
+}
+
+.contact-section {
+  flex-direction: column;
+  margin: 64px 0 128px 0;
+}
+
+.form-query-section {
+  margin: 10px 0 160px 0;
+  justify-content: flex-end;
+}
+
+.form-query-section p span {
+  background-color: black;
+  color: #f2f2f2;
+  font-size: 48px;
+  line-height: 160%;
+  padding: 0 24px;
+}
+
+aside.em-background {
+  font-size: 24px;
+  font-weight: 700;
+  background-color: #fcee21;
+  padding: 0 30px 0 14px;
+  margin-top: 24px;
+}
+
+.form-section {
+  margin: 0;
+  height: 600px;
+}
+
+.form-section form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.text-bold {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+input,
+textarea {
+  width: 600px;
+  margin-bottom: 28px;
+  font-size: 24px;
+  padding: 10px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-size: 24px;
+}
+
+input {
+  height: 60px;
+}
+
+textarea {
+  height: 160px;
+}
+
+.form-buttons {
+  color: #f2f2f2;
+  background-color: black;
+  font-size: 24px;
+  padding: 8px 64px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.reset-button {
+  transform: translateX(60%);
+}
+
+.color-red {
+  color: red;
+}
+
+.wwwapas-mailto {
+  justify-content: space-between;
+  margin: 0 248px 128px 0;
+}
+
+.wwwapas-mailto p {
+  font-size: 26px;
+  color: #686868bf;
+  font-weight: 700;
+  align-self: center;
+}
+
+footer h3 {
+  font: 900 36px 'Coiny', system-ui;
+}
+
+.mailto {
+  align-self: center;
+  margin-left: 112px;
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  text-align: center;
+}
+
+.mailto:hover {
+  text-decoration: underline;
+  color: #26313b;
+  font-size: 20px;
+  margin-left: 108px;
+  transition: 0.25s linear;
+}
+
+hr.division-spacing {
+  display: flex;
+  justify-content: center;
+  margin: 32px 0;
+  border: 1px solid #0000001f;
+  filter: blur(1px);
+}
