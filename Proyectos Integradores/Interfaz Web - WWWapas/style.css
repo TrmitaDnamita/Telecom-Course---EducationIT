@@ -204,7 +204,6 @@ body {
 	flex-direction: row;
 	flex-flow: row wrap;
 	justify-content: space-evenly;
-	flex-shrink: 2;
 }
 
 .wwwapas-mailto {

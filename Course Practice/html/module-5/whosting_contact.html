@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>WH Hosting</title>
+	
+	<link rel="stylesheet" href="../../css/module-5/whosting_style.css">
+</head>
+<body class="contacto-body">
+	<header class="wh-header flex">
+		<img class="wh-svg center-img" src="../../res/img/module-5/M5-logo-azul.svg" alt="wh-logo">
+		<nav class="wh-nav flex">
+			<a class="nav-href bold decor-none color-primary" href="whosting_home_index.html">Home</a>
+			<a class="nav-href bold decor-none color-primary" href="whosting_whyus.html">¿Por Que Elegirnos?</a>
+			<a class="nav-href bold decor-none color-primary" href="whosting_contact.html">Contacto</a>
+		</nav>
+	</header>
+	<main class="contacto-main flex column">
+		<h1 class="contacto-h1"><strong>Quieres que nos contactemos?</strong></h1>
+		<p class="contacto-p">Dejanos tu consulta:</p>
+		<form class="flex column" action="../../php/module-5/submit-contact-query.php" method="post" id="contact-form">
+			<label class="contacto-label bold" for="name">Nombre Completo<span class="color-red">*</span></label>
+			<input class="contacto-textfield" type="text" name="name" id="name" required placeholder="Nombre/s Apellido/s">
+			<label class="contacto-label bold" for="email">Email<span class="color-red">*</span></label>
+			<input class="contacto-textfield" type="email" name="email" id="email" required placeholder="nombre.de_usuario@email.com">
+			<label class="contacto-label bold" for="msg">Comentario<span class="color-red">*</span></label>
+			<textarea class="contacto-textfield" name="msg" id="msg" required placeholder="Escriba su Consulta"></textarea>
+		</form>
+		<div class="contacto-buttons flex">
+			<button class="contacto-reset-button bgr-orange nobrdr radius-sm color-white" type="reset" form="contact-form">Resetear</button>
+			<button class="contacto-send-button bgr-deepblue nobrdr radius-sm color-white" type="submit" form="contact-form">Enviar</button>
+		</div>
+	</main>
+	<footer class="wh-footer flex">
+		<img src="../../res/img/module-5/M5-logo-blanco.svg" alt="WH-Logo">
+	</footer>
+</body>
+</html>
